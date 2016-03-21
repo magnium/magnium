@@ -6,11 +6,11 @@ import sys, os
 try:
    import numpy
 except:
-   print '''
+   print('''
 -- Error.
 kmpfit requires NumPy, which seems to be unavailable here.
 Please check your Python installation.
-'''
+''')
    sys.exit(1)
 
 
