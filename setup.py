@@ -1,6 +1,4 @@
 from distutils.core import setup, Extension
-from distutils.sysconfig import get_python_inc, get_python_lib
-from glob import glob
 import sys, os
 
 try:
@@ -28,7 +26,6 @@ description = """
       profiles) and a class for non-linear least squares curve fitting
       (module kmpfit)
    """
-
 
 define_macros = []
 
@@ -60,7 +57,6 @@ setup(
    license = 'BSD',
    ext_package='kmpfit',
    packages = ['kmpfit'], 
-   ext_modules=[
-      Extension("kmpfit", sources=["src/kmpfit.c", "src/mpfit.c"], include_dirs=include_dirs)
-   ],
+   ext_modules = [Extension("kmpfit", sources=["src/kmpfit.c", "src/mpfit.c"],
+                            include_dirs=include_dirs)],
 )
