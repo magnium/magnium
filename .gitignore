@@ -1,1 +1,7 @@
 /kmpfit/__pycache__/*.pyc
+/build
+/dist
+/kmpfit.egg-info
+/src/kmpfit.c
+/*.pyd
+/.vscode
