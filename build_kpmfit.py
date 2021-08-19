@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Oct 15 09:38:04 2013
-
-@author: Raman
-"""
-
 import logging
 import numpy
 logging.basicConfig(level=logging.DEBUG)
@@ -19,6 +13,6 @@ Cython.Compiler.Options.annotate = False
 setup(
     cmdclass = {'build_ext': build_ext},
     include_dirs=[numpy.get_include()],
-    ext_modules = [Extension("kmpfit", sources=["src/kmpfit.pyx", "src/mpfit.c"])],
+    ext_modules = [Extension("_kmpfit", sources=["src/kmpfit.pyx", "src/mpfit.c"])],
     script_args = ['build_ext', '--inplace']
 )

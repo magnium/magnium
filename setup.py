@@ -15,7 +15,7 @@ setup(
       install_requires=requirements,
       include_dirs=[numpy.get_include()],
       packages=['kmpfit'],
-      ext_modules = cythonize(Extension("kmpfit", ["src/kmpfit.pyx", "src/mpfit.c"]), annotate=False),
+      ext_modules = cythonize(Extension("_kmpfit", ["src/kmpfit.pyx", "src/mpfit.c"]), annotate=False),
       license = 'BSD',
       classifiers=[
       'Development Status :: 4 - Beta',

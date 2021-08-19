@@ -11,6 +11,10 @@ install the package.
     
     python setup.py install
 
+If you've got a binary wheel file instead of a source, than use pip:
+
+    pip install kmpfit-1.0.3-cp39-cp39-win_amd64.whl
+
 ### There are a couple of basic examples included
 
 * kmpfit/example1.py -- basic line fitting example

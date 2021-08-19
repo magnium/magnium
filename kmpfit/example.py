@@ -1,5 +1,7 @@
+import sys
+sys.path.append('.')
 import numpy
-from kmpfit import kmpfit
+import kmpfit
 
 def residuals(p, data):  # Residuals function needed by kmpfit
    x, y = data           # Data arrays is a tuple given by programmer

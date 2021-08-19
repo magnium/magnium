@@ -1,6 +1,8 @@
+import sys
+sys.path.append('.')
 import numpy
 from matplotlib.pyplot import figure, show, rc
-from kmpfit import kmpfit
+import kmpfit
 
 def my_model(p, x):
    #-----------------------------------------------------------------------

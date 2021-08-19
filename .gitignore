@@ -5,3 +5,5 @@
 /src/kmpfit.c
 /*.pyd
 /.vscode
+/.eggs
+/src/kmpfit.pxd
